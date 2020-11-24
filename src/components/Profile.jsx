@@ -1,8 +1,9 @@
 import React from "react";
 import img2 from "../Logo.jpg";
+import classes from "./Profile.module.css";
 
 const Profile = () => {
-    return <div className='content'>
+    return <div className={classes.content}>
         <div>
             <img src={img2} />
         </div>
