@@ -1,0 +1,12 @@
+.content {
+    grid-area: content;
+    background-color: aquamarine;
+}
+
+.item {
+    color: darkred;
+}
+
+.avatar {
+    width: 50px;
+}

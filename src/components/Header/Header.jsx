@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../Security.svg";
+import img1 from "../../Security.svg";
 import classes from "./Header.module.css";
 
 const Header = () => {
