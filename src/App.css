@@ -8,3 +8,11 @@
   grid-template-columns: 1fr 10fr;
 
 }
+
+.app-wrapper-content {
+
+  grid-area: content;
+  background-color: aquamarine;
+  margin: 0 auto;
+
+}

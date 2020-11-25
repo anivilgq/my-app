@@ -4,7 +4,7 @@ import c from "./Profile.module.css";
 import MyPosts from "./MyPosts/MyPosts";
 
 const Profile = () => {
-    return <div className={c.content}>
+    return <div>
         <div>
             <img className={c.logo} src={img2} />
         </div>
