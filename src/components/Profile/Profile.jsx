@@ -1,20 +1,17 @@
 import React from "react";
-import img2 from "./Logo.jpg";
+
 import c from "./Profile.module.css";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import MyPosts from "./MyPosts/MyPosts";
 
-const Profile = () => {
-    return <div>
-        <div>
-            <img className={c.logo} src={img2} />
-        </div>
 
+const Profile = () => {
+    return (
         <div>
-            <div>Ava</div>
-            <div>description</div>
+            <ProfileInfo />
+            <MyPosts />
         </div>
-        <MyPosts />
-    </div>
+    )
 }
 
 export default Profile;

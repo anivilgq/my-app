@@ -7,7 +7,8 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import Friends from "./components/Friends/Friends";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
-import {BrowserRouter, Route} from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
+
 
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
         <Header />
         <Nav />
         <div className="app-wrapper-content">
-            <Route path='/messages' component = { Dialogs } />
+            <Route path='/dialogs' component = { Dialogs } />
             <Route path='/profile' component = { Profile } />
             <Route path='/friends' component = { Friends } />
             <Route path='/news' component = { News } />
@@ -27,9 +28,5 @@ const App = () => {
       </BrowserRouter>
   );
 }
-
-
-
-
 
 export default App;
