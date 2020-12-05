@@ -7,26 +7,29 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import Friends from "./components/Friends/Friends";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
-import { BrowserRouter, Route } from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
 
 
+const App = (props) => {
 
-const App = () => {
-  return (
-      <BrowserRouter>
-      <div className='app-wrapper'>
-        <Header />
-        <Nav />
-        <div className="app-wrapper-content">
-            <Route path='/dialogs' component = { Dialogs } />
-            <Route path='/profile' component = { Profile } />
-            <Route path='/friends' component = { Friends } />
-            <Route path='/news' component = { News } />
-            <Route path='/settings' component = { Settings } />
-      </div>
-      </div>
-      </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <div className='app-wrapper'>
+                <Header/>
+                <Nav/>
+                <div className="app-wrapper-content">
+                    <Route path='/dialogs' render={ () =>
+                        <Dialogs state={props.state.dialogsPage} /> }/>
+                    <Route path='/profile' render={ () =>
+                        <Profile state={props.state.profilePage}
+                                 addPost={props.addPost} /> }/>
+                    <Route path='/friends' render={Friends}/>
+                    <Route path='/news' render={News}/>
+                    <Route path='/settings' render={Settings}/>
+                </div>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
