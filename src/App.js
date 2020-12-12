@@ -3,11 +3,11 @@ import './App.css';
 import Header from "./components/Header/Header";
 import Profile from "./components/Profile/Profile";
 import Nav from "./components/Nav/Nav";
-import Dialogs from "./components/Dialogs/Dialogs";
 import Friends from "./components/Friends/Friends";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
 import {BrowserRouter, Route} from "react-router-dom";
+import DialogsContainer from "./components/Dialogs/DialogsContainer";
 
 
 const App = (props) => {
@@ -19,10 +19,9 @@ const App = (props) => {
                 <Nav/>
                 <div className="app-wrapper-content">
                     <Route path='/dialogs' render={ () =>
-                        <Dialogs dialogsPage={props.state.dialogsPage} /> }/>
+                        <DialogsContainer /> }/>
                     <Route path='/profile' render={ () =>
-                        <Profile dialogsPage={props.state.profilePage}
-                                 dispatch={props.dispatch} /> }/>
+                        <Profile /> }/>
                     <Route path='/friends' render={Friends}/>
                     <Route path='/news' render={News}/>
                     <Route path='/settings' render={Settings}/>
