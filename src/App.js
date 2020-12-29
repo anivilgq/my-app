@@ -6,14 +6,14 @@ import Nav from "./components/Nav/Nav";
 import Friends from "./components/Friends/Friends";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
-import {BrowserRouter, Route} from "react-router-dom";
+import { Route } from "react-router-dom";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 
 
 const App = (props) => {
 
     return (
-        <BrowserRouter>
+
             <div className='app-wrapper'>
                 <Header/>
                 <Nav/>
@@ -27,7 +27,7 @@ const App = (props) => {
                     <Route path='/settings' render={Settings}/>
                 </div>
             </div>
-        </BrowserRouter>
+
     );
 }
 
