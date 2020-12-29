@@ -7,6 +7,7 @@ const Nav = () => {
         <div className={n.item}><NavLink to ="/profile" activeClassName={n.activeLink}>Profile</NavLink></div>
         <div className={n.item}><NavLink to ="/dialogs" activeClassName={n.activeLink}>Dialogs</NavLink></div>
         <div className={n.item}><NavLink to ="/news" activeClassName={n.activeLink}>News</NavLink></div>
+        <div className={n.item}><NavLink to ="/users" activeClassName={n.activeLink}>Users</NavLink></div>
         <div className={n.item}><NavLink to ="/friends" activeClassName={n.activeLink}>Friends</NavLink></div>
         <div className={n.item}><NavLink to ="/settings" activeClassName={n.activeLink}>Settings</NavLink></div>
     </nav>

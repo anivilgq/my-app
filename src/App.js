@@ -8,6 +8,7 @@ import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
 import { Route } from "react-router-dom";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
+import UsersContainer from "./components/Users/UsersContainer";
 
 
 const App = (props) => {
@@ -23,6 +24,7 @@ const App = (props) => {
                     <Route path='/profile' render={ () =>
                         <Profile /> }/>
                     <Route path='/friends' render={Friends}/>
+                    <Route path='/users' render={UsersContainer}/>
                     <Route path='/news' render={News}/>
                     <Route path='/settings' render={Settings}/>
                 </div>
