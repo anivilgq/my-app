@@ -3,3 +3,14 @@
     width: 60px;
 
 }
+
+.selectedPage {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.numberPage {
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 auto;
+}
