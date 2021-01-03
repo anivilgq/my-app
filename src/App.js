@@ -11,7 +11,7 @@ import UsersContainer from "./components/Users/UsersContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
 
 
-const App = (props) => {
+const App = () => {
 
     return (
 
@@ -21,7 +21,7 @@ const App = (props) => {
                 <div className="app-wrapper-content">
                     <Route path='/dialogs' render={ () =>
                         <DialogsContainer /> }/>
-                    <Route path='/profile' render={ () =>
+                    <Route path='/profile/:userId?' render={ () =>
                         <ProfileContainer /> }/>
                     <Route path='/friends' render={Friends}/>
                     <Route path='/users' render={ () => <UsersContainer/>}/>
